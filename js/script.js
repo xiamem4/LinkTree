@@ -1,36 +1,32 @@
-const links = document.querySelectorAll('.link');
-const toggleBtn = document.getElementById('theme-toggle');
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.link img');
+  const toggleBtn = document.getElementById('theme-toggle');
 
-// Appliquer les événements hover/click sur les logos
-links.forEach(link => {
-  const img = link.querySelector('img');
-  const originalSrc = img.getAttribute('data-original');
-  const hoverSrc = img.getAttribute('data-hover');
+  let isDark = document.body.classList.contains('dark-mode');
 
-  link.addEventListener('mouseenter', () => {
-    img.src = hoverSrc;
+  // Gestion du hover des logos
+  links.forEach(img => {
+    const original = img.dataset.original;
+    const hover = img.dataset.hover;
+
+    img.parentElement.addEventListener('mouseenter', () => {
+      img.src = hover;
+    });
+
+    img.parentElement.addEventListener('mouseleave', () => {
+      img.src = isDark ? hover : original;
+    });
   });
 
-  link.addEventListener('mouseleave', () => {
-    const isDark = document.body.classList.contains('dark-mode');
-    img.src = isDark ? hoverSrc : originalSrc;
-  });
+  // Gestion du thème
+  toggleBtn.addEventListener('click', () => {
+    isDark = !isDark;
+    document.body.classList.toggle('dark-mode', isDark);
+    toggleBtn.textContent = isDark ? 'Mode sombre' : 'Mode clair';
 
-  link.addEventListener('click', () => {
-    img.src = hoverSrc;
-  });
-});
-
-// Gestion du bouton de thème
-toggleBtn.addEventListener('click', () => {
-  const isDark = document.body.classList.toggle('dark-mode');
-  toggleBtn.textContent = isDark ? 'Mode sombre' : 'Mode clair';
-
-  // Mettre à jour les icônes selon le thème
-  links.forEach(link => {
-    const img = link.querySelector('img');
-    const originalSrc = img.getAttribute('data-original');
-    const hoverSrc = img.getAttribute('data-hover');
-    img.src = isDark ? hoverSrc : originalSrc;
+    // Mettre à jour les icônes selon le thème
+    links.forEach(img => {
+      img.src = isDark ? img.dataset.hover : img.dataset.original;
+    });
   });
 });

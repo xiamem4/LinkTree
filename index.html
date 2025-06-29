@@ -7,12 +7,17 @@
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Ranade&display=swap" rel="stylesheet">
   <script src="./js/script.js" defer></script>
+  <meta name="description" content="Maxime Croissant – Liste de lien utiles : Instagram, LinkedIn, Portfolio, Mail, YouTube et GitHub.">
+  <link rel="icon" href="./src/pdp.webp" type="image/x-icon">
+  <link rel="preload" href="./src/pdp.webp" as="image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header>
-        <button id="theme-toggle">Mode clair</button>
-        <div class="presentation">
-            <img class="profilPicture" src="./src/pdp.png">
+    <header role="banner">
+        <button id="theme-toggle" aria-label="Changer le thème clair/sombre">Mode clair</button>
+        <div class="presentation" role="region">
+            <img class="profilPicture" src="./src/pdp.webp" alt="photo de profil en studio">
             <h1>Maxime Croissant</h1>
             <div class="bio">
                 <p>👋 Bienvenue ! Je suis Maxime, étudiant en MMI, spécialisé en développement web et programmation Java.</p>
@@ -21,44 +26,46 @@
         </div>
     </header>
     <main>
-        <ul>
-            <li class="link">
-                <a href="">
-                    <img src="./src/Portfolio +.svg" class="logo" data-hover="./src/Portfolio -.svg" data-original="./src/Portfolio +.svg">
-                    <h2>Portfolio</h2>
-                </a>
-            </li>
-            <li class="link">
-                <a href="">
-                    <img src="./src/LinkedIn +.svg" class="logo" data-hover="./src/LinkedIn -.svg" data-original="./src/LinkedIn +.svg">
-                    <h2>LinkedIn</h2>
-                </a>
-            </li>
-            <li class="link">
-                <a href="">
-                    <img src="./src/Instagram +.svg" class="logo" data-hover="./src/Instagram -.svg" data-original="./src/Instagram +.svg">
-                    <h2>Instagram</h2>
-                </a>
-            </li>
-            <li class="link">
-                <a href="">
-                    <img src="./src/YouTube +.svg" class="logo" data-hover="./src/YouTube -.svg" data-original="./src/YouTube +.svg">
-                    <h2>YouTube</h2>
-                </a>
-            </li>
-            <li class="link">
-                <a href="">
-                    <img src="./src/GitHub +.svg" class="logo" data-hover="./src/GitHub -.svg" data-original="./src/GitHub +.svg">
-                    <h2>GitHub</h2>
-                </a>
-            </li>
-            <li class="link">
-                <a href="">
-                    <img src="./src/Mail +.svg" class="logo" data-hover="./src/Mail -.svg" data-original="./src/Mail +.svg">
-                    <h2>Mail Pro</h2>
-                </a>
-            </li>
-        </ul>
+        <nav role="region">
+            <ul role="list">
+                <li class="link" role="listitem">
+                    <a href="" aria-label="Lien vers mon Portfolio">
+                        <img src="./src/Portfolio +.svg" class="logo" data-hover="./src/Portfolio -.svg" data-original="./src/Portfolio +.svg" alt="Logo Portfolio vectoriel unicolor">
+                        <h2>Portfolio</h2>
+                    </a>
+                </li>
+                <li class="link" role="listitem">
+                    <a href="" aria-label="Lien vers mon profil LinkedIn">
+                        <img src="./src/LinkedIn +.svg" class="logo" data-hover="./src/LinkedIn -.svg" data-original="./src/LinkedIn +.svg" alt="Logo LinkedIn vectoriel unicolor">
+                        <h2>LinkedIn</h2>
+                    </a>
+                </li>
+                <li class="link" role="listitem">
+                    <a href="" aria-label="Lien vers mon profil Instagram">
+                        <img src="./src/Instagram +.svg" class="logo" data-hover="./src/Instagram -.svg" data-original="./src/Instagram +.svg" alt="Logo Instagram vectoriel unicolor"> 
+                        <h2>Instagram</h2>
+                    </a>
+                </li>
+                <li class="link" role="listitem">
+                    <a href="" aria-label="Lien vers mon profil YouTube">
+                        <img src="./src/YouTube +.svg" class="logo" data-hover="./src/YouTube -.svg" data-original="./src/YouTube +.svg" alt="Logo YouTube vectoriel unicolor">
+                        <h2>YouTube</h2>
+                    </a>
+                </li>
+                <li class="link" role="listitem" >
+                    <a href="" aria-label="Lien vers mon profil GitHub">
+                        <img src="./src/GitHub +.svg" class="logo" data-hover="./src/GitHub -.svg" data-original="./src/GitHub +.svg" alt="Logo GitHub vectoriel unicolor">
+                        <h2>GitHub</h2>
+                    </a>
+                </li>
+                <li class="link" role="listitem">
+                    <a href="" aria-label="Lien vers mon e-mail">
+                        <img src="./src/Mail +.svg" class="logo" data-hover="./src/Mail -.svg" data-original="./src/Mail +.svg" alt="Logo Mail vectoriel unicolor">
+                        <h2>Mail Pro</h2>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </main>
     <footer>
         <p>© 2025 Maxime Croissant - Tous droits réservés</p>
