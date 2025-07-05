@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maxime Croissant | LinkTree</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Ranade&display=swap" rel="stylesheet">
-  <script src="./js/script.js" defer></script>
-  <meta name="description" content="Maxime Croissant – Liste de lien utiles : Instagram, LinkedIn, Portfolio, Mail, YouTube et GitHub.">
-  <link rel="icon" href="./src/pdp.webp" type="image/x-icon">
-  <link rel="preload" href="./src/pdp.webp" as="image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    
+    <title>Maxime Croissant | LinkTree</title>
+
+    <script src="./js/script.js" defer></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ranade&display=swap" rel="stylesheet">
+    <link rel="icon" href="./src/pdp.webp" type="image/webp">
+    <link rel="mask-icon" href="./src/pdp.webp" color="#000000">
+
+    <link rel="preload" href="./src/pdp.webp" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maxime Croissant – Liste de liens utiles : Portfolio, LinkedIn, Instagram, GitHub, YouTube, et contact professionnel.">
+    <meta name="author" content="Maxime Croissant">
+
+    <meta property="og:title" content="MaxMaxime Croissant | LinkTree">
+    <meta property="og:description"
+        content="Tous mes liens importants : Portfolio, LinkedIn, Instagram, GitHub, YouTube et e-mail pro.">
+    <meta property="og:image" content="https://xiamem4.github.io/LinkTree/src/pdp.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xiamem4.github.io/LinkTree/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Maxime Croissant | LinkTree">
+    <meta name="twitter:description" content="Tous mes liens importants : Portfolio, LinkedIn, Instagram, GitHub, YouTube et e-mail pro.">
+    <meta name="twitter:image" content="https://xiamem4.github.io/LinkTree/src/pdp.webp">
 </head>
+
 <body>
     <header role="banner">
         <button id="theme-toggle" aria-label="Changer le thème clair/sombre">Mode clair</button>
@@ -20,55 +41,66 @@
             <img class="profilPicture" src="./src/pdp.webp" alt="photo de profil en studio">
             <h1>Maxime Croissant</h1>
             <div class="bio">
-                <p>👋 Bienvenue ! Je suis Maxime, étudiant en MMI, spécialisé en développement web et programmation Java.</p>
-                <p>Curieux et polyvalent, je travaille aussi bien sur des projets de code que de montage vidéo, avec toujours la même envie d’apprendre et de progresser.</p>
+                <p>👋 Bienvenue ! Je suis Maxime, étudiant en MMI, spécialisé en développement web et programmation
+                    Java.</p>
+                <p>Curieux et polyvalent, je travaille aussi bien sur des projets de code que de montage vidéo, avec
+                    toujours la même envie d’apprendre et de progresser.</p>
             </div>
         </div>
     </header>
     <main>
-        <nav role="region">
-            <ul role="list">
-                <li class="link" role="listitem">
-                    <a href="" aria-label="Lien vers mon Portfolio">
-                        <img src="./src/Portfolio +.svg" class="logo" data-hover="./src/Portfolio -.svg" data-original="./src/Portfolio +.svg" alt="Logo Portfolio vectoriel unicolor">
-                        <h2>Portfolio</h2>
-                    </a>
-                </li>
-                <li class="link" role="listitem">
-                    <a href="" aria-label="Lien vers mon profil LinkedIn">
-                        <img src="./src/LinkedIn +.svg" class="logo" data-hover="./src/LinkedIn -.svg" data-original="./src/LinkedIn +.svg" alt="Logo LinkedIn vectoriel unicolor">
-                        <h2>LinkedIn</h2>
-                    </a>
-                </li>
-                <li class="link" role="listitem">
-                    <a href="" aria-label="Lien vers mon profil Instagram">
-                        <img src="./src/Instagram +.svg" class="logo" data-hover="./src/Instagram -.svg" data-original="./src/Instagram +.svg" alt="Logo Instagram vectoriel unicolor"> 
-                        <h2>Instagram</h2>
-                    </a>
-                </li>
-                <li class="link" role="listitem">
-                    <a href="" aria-label="Lien vers mon profil YouTube">
-                        <img src="./src/YouTube +.svg" class="logo" data-hover="./src/YouTube -.svg" data-original="./src/YouTube +.svg" alt="Logo YouTube vectoriel unicolor">
-                        <h2>YouTube</h2>
-                    </a>
-                </li>
-                <li class="link" role="listitem" >
-                    <a href="" aria-label="Lien vers mon profil GitHub">
-                        <img src="./src/GitHub +.svg" class="logo" data-hover="./src/GitHub -.svg" data-original="./src/GitHub +.svg" alt="Logo GitHub vectoriel unicolor">
-                        <h2>GitHub</h2>
-                    </a>
-                </li>
-                <li class="link" role="listitem">
-                    <a href="" aria-label="Lien vers mon e-mail">
-                        <img src="./src/Mail +.svg" class="logo" data-hover="./src/Mail -.svg" data-original="./src/Mail +.svg" alt="Logo Mail vectoriel unicolor">
-                        <h2>Mail Pro</h2>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <section aria-labelledby="liens-utiles">
+            <nav aria-labelledby="region">
+                <ul>
+                    <li class="link">
+                        <a href="" aria-label="Lien vers mon Portfolio">
+                            <img src="./src/Portfolio +.svg" class="logo" data-hover="./src/Portfolio -.svg"
+                                data-original="./src/Portfolio +.svg" alt="Logo Portfolio vectoriel unicolor">
+                            <h2>Portfolio</h2>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="" aria-label="Lien vers mon profil LinkedIn">
+                            <img src="./src/LinkedIn +.svg" class="logo" data-hover="./src/LinkedIn -.svg"
+                                data-original="./src/LinkedIn +.svg" alt="Logo LinkedIn vectoriel unicolor">
+                            <h2>LinkedIn</h2>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="" aria-label="Lien vers mon profil Instagram">
+                            <img src="./src/Instagram +.svg" class="logo" data-hover="./src/Instagram -.svg"
+                                data-original="./src/Instagram +.svg" alt="Logo Instagram vectoriel unicolor">
+                            <h2>Instagram</h2>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="" aria-label="Lien vers mon profil YouTube">
+                            <img src="./src/YouTube +.svg" class="logo" data-hover="./src/YouTube -.svg"
+                                data-original="./src/YouTube +.svg" alt="Logo YouTube vectoriel unicolor">
+                            <h2>YouTube</h2>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="" aria-label="Lien vers mon profil GitHub">
+                            <img src="./src/GitHub +.svg" class="logo" data-hover="./src/GitHub -.svg"
+                                data-original="./src/GitHub +.svg" alt="Logo GitHub vectoriel unicolor">
+                            <h2>GitHub</h2>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="" aria-label="Lien vers mon e-mail">
+                            <img src="./src/Mail +.svg" class="logo" data-hover="./src/Mail -.svg"
+                                data-original="./src/Mail +.svg" alt="Logo Mail vectoriel unicolor">
+                            <h2>Mail Pro</h2>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </main>
     <footer>
         <p>© 2025 Maxime Croissant - Tous droits réservés</p>
     </footer>
 </body>
+
 </html>
