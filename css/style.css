@@ -52,6 +52,7 @@ button {
     border-radius: 0.625rem;
     background-color: #2e3134;
     z-index: 100;
+    cursor: pointer;
 }
 
 h1 {
