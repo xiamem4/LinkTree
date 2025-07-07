@@ -1,6 +1,11 @@
 @font-face {
   font-family: 'Excon';
-  src: url('../font/Excon-Medium.ttf') format('truetype'); /* ou .woff / .woff2 */
+  src: url('../font/Excon-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ranade';
+  src: url('../font/Ranade-Light.ttf') format('truetype');
 }
 
 body, .link, h1, h2, .bio {
