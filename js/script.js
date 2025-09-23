@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   toggleBtn.addEventListener('click', () => {
     isDark = !isDark;
     document.body.classList.toggle('dark-mode', isDark);
-    toggleBtn.textContent = isDark ? 'Mode sombre' : 'Mode clair';
+    toggleBtn.textContent = isDark ? 'Mode sombre 🌑' : 'Mode clair ☀️';
 
     // Mettre à jour les icônes selon le thème
     links.forEach(img => {
